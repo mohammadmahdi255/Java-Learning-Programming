@@ -1,8 +1,8 @@
-import exceptions.ExceptionsDemo;
+import lambdas.LambdaDemo;
 
 public class Main {
 
     public static void main(String[] args) {
-        ExceptionsDemo.show();
+        LambdaDemo.show();
     }
 }
