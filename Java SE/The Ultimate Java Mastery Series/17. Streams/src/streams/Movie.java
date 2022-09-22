@@ -3,10 +3,12 @@ package streams;
 public class Movie {
     private String title;
     private int likes;
+    private Genre genre;
 
-    public Movie(String title, int likes) {
+    public Movie(String title, int likes, Genre genre) {
         setTitle(title);
         setLikes(likes);
+        setGenre(genre);
     }
 
     public String getTitle() {
@@ -23,5 +25,22 @@ public class Movie {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", likes=" + likes +
+                ", genre=" + genre +
+                '}';
     }
 }
